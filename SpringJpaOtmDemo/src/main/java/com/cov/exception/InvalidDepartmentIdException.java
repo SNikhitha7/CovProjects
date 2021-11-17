@@ -21,5 +21,4 @@ public class InvalidDepartmentIdException extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
-
 }

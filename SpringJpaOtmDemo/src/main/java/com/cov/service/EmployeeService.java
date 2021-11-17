@@ -32,7 +32,7 @@ import com.cov.repo.EmployeeRepo;
 			return empOptional.get();
 
 			}
-		public Employee save(Employee employee) throws InvalidEmployeeIdException{
+		public Employee save(Employee employee) {
 
 			return employeeRepo.save(employee);
 

@@ -24,7 +24,7 @@ public class DepartmentService {
 	}
 
 	public Department findById(int id) throws InvalidDepartmentIdException {
-		Optional<Department> deptOptional = departmentRepo.findById((long) id);
+		Optional<Department> deptOptional = departmentRepo.findById(id);
 		if (!deptOptional.isPresent()) {
 			throw new InvalidDepartmentIdException("Department Id " + id + " not existing in repository");
 		}
@@ -48,12 +48,12 @@ public class DepartmentService {
 	}
 
 	public Department delete(int id) throws InvalidDepartmentIdException {
-		Optional<Department> deptOptional = departmentRepo.findById((long) id);
+		Optional<Department> deptOptional = departmentRepo.findById(id);
 		if (!deptOptional.isPresent()) {
 			throw new InvalidDepartmentIdException("Department Id " + id + "not existing in repository");
 		}
 		Department department = deptOptional.get();
-		departmentRepo.deleteById((long) id);
+		departmentRepo.deleteById(id);
 		return department;
 	}
 }

@@ -12,40 +12,44 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name ="department")
+@Table(name = "department")
 public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	long id;
+	int id;
 	String deptName;
-	@OneToMany(mappedBy = "department", fetch = FetchType.LAZY,
-            cascade = CascadeType.ALL)
-    private List<Employee> employees;
+	@OneToMany(mappedBy = "department", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private List<Employee> employees;
 
-    public Department() {
-    }
-	public long getId() {
+	public Department() {
+	}
+
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+
+	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getDeptName() {
 		return deptName;
 	}
+
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
 	}
-	public Department(long id, String deptName) {
+
+	public Department(int id, String deptName) {
 		super();
 		this.id = id;
 		this.deptName = deptName;
-		
+
 	}
+
 	@Override
 	public String toString() {
 		return "Department [id=" + id + ", deptName=" + deptName + "]";
 	}
-	
 
 }
