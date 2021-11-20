@@ -10,7 +10,7 @@
 	<h2>Department Details</h2>
 	Id:${ department.id }
 	<br>
-	<br> Name:${ department.deptname }
+	<br> Name:${ department.name }
 	<br>
 	<br>
 	<a href = "/" >Home</a>

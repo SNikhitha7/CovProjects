@@ -13,10 +13,7 @@
 </head>
 <body>
 	<form:form action="regEmp" method="post" modelAttribute="employee">
-		<!-- <form:label path="id">ID</form:label>
-<form:input path="id" />
-<br>
-<br> -->
+		
 		<form:label path="name">Name</form:label>
 		<form:input path="name" />
 		<br>

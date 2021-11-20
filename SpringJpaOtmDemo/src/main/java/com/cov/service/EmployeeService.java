@@ -1,13 +1,15 @@
 
 	package com.cov.service;
 
-	import java.util.List;
+	import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cov.beans.Employee;
+import com.cov.exception.InvalidDepartmentIdException;
 import com.cov.exception.InvalidEmployeeIdException;
 import com.cov.repo.EmployeeRepo;
 
@@ -18,7 +20,7 @@ import com.cov.repo.EmployeeRepo;
 		EmployeeRepo employeeRepo;
 
 		public List<Employee> findAll() {
-//			List<Employee> employee=new ArrayList<Employee>();
+		List<Employee> employee=new ArrayList<Employee>();
 			return employeeRepo.findAll();
 //			return employee;
 
@@ -50,9 +52,25 @@ import com.cov.repo.EmployeeRepo;
 				throw new InvalidEmployeeIdException("Employee Id" + id+ "not existing in repository");
 			}
 			Employee employee = empOptional.get();
-			employeeRepo.deleteById(id);
+			System.out.println("delete id in service : "+id);
+			System.out.println("delete employee in service : "+employee);
+			employeeRepo.delete(employee);
 			return employee;
 		}
+
+		public List<Employee> findAllByDeptno(int deptno) throws InvalidDepartmentIdException {
+			List<Employee> employee = employeeRepo.findAllEmployeeDeptno(deptno);
+			if (employee.isEmpty()) {
+			throw new InvalidDepartmentIdException("Department Id " + deptno + "not existing in repository");
+			}
+
+
+
+			return employee;
+
+
+
+			}
 
 
 	}

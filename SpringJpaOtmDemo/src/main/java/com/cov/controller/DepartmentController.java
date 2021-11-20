@@ -24,9 +24,10 @@ public class DepartmentController {
 	}
 
 	@RequestMapping(value = "regdept", method = RequestMethod.POST)
-	public ModelAndView saveDepartment(@ModelAttribute Department dept) {
-		ModelAndView modelAndView = new ModelAndView("savedDepartment");
-		modelAndView.addObject("dept", departmentService.save(dept));
+	public ModelAndView saveDepartment(@ModelAttribute("department") Department department) {
+		System.out.println("XXXXXXXXX Department in DepartmentController - saveDepartment : "+department);
+		departmentService.save(department);
+		ModelAndView modelAndView = new ModelAndView("redirect:getDept");
 		return modelAndView;
 	}
 
@@ -52,4 +53,10 @@ public class DepartmentController {
 		return modelAndView;
 	}
 
+	@RequestMapping(value = "deleteDept")
+	public ModelAndView deleteEmp(@RequestParam int id) throws InvalidDepartmentIdException {
+		departmentService.delete(id);
+		ModelAndView modelAndView = new ModelAndView("redirect:" + "getDept");
+		return modelAndView;
+	}
 }

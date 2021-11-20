@@ -9,6 +9,8 @@ import com.cov.beans.Department;
 import com.cov.beans.Employee;
 
 public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
-	//@Query("SELECT  e FROM Employee e where e.department.id =?1")
-	List<Employee> findByDepartment(Department department);
+	@Query("SELECT  e FROM Employee e where e.department.id =?1")
+	List<Employee> findAllEmployeeDeptno(int deptno);
+
+	
 }

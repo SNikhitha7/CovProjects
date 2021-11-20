@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1>Update Department Details</h1>
-	<form:form action="updateDept" modelAttribute="deptToEdit">
+	<form:form action="updateDept"  modelAttribute="deptToEdit">
 		<table>
 			<tr>
 				<form:label path="id">ID</form:label>
@@ -23,7 +23,7 @@
 				<br>
 				
 				
-				<input type="submit" value="Register">
+				<input type="submit" value="Update">
 			</tr>
 		</table>
 	</form:form>

@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2 align="center">Employee Details</h2>
+	<h2 align="center">Department Details</h2>
 	<table border="1" >
 		<tr>
 			<th>ID</th>

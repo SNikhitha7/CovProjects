@@ -8,13 +8,13 @@
 </head>
 <body>
 	<h2>Welcome to Employee Details</h2>
-	<a href="regEmp">Employee Registration</a>
-	<br>
-	<br>
-	<a href="getEmp">show all employees</a>
-	<br>
-	<br>
-	<a href="getDept">show department</a>
+	<!-- <a href="regEmp">Employee Registration</a> --></a>
+	
+	<a href="getEmp">Show All Employees</a>
+	
+	<!--  <a href="getDept"> Show Department</a>-->
+	<br><br>
+	<!-- <a href="regdept">Register Departments</a>-->
 
 
 </body>
