@@ -1,0 +1,35 @@
+2021-11-24 14:57:15,952 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:35 -finding all employees
+ 2021-11-24 14:58:52,535 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.DepartmentController:42 -finding all departments
+ 2021-11-24 15:00:37,607 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.DepartmentController:42 -finding all departments
+ 2021-11-24 15:00:59,456 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:35 -finding all employees
+ 2021-11-24 15:13:20,517 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with null
+ 2021-11-24 15:15:01,116 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with null
+ 2021-11-24 15:18:54,514 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:35 -finding all employees
+ 2021-11-24 15:20:07,974 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:35 -finding all employees
+ 2021-11-24 15:20:20,170 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:24:39,674 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:24:39,680 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:24:39,683 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:24:39,683 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-24 15:28:32,083 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:28:32,087 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:28:32,088 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:28:32,089 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-24 15:28:50,922 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.DepartmentController:48 -inserting a department with giri
+ 2021-11-24 15:29:16,125 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:29:16,126 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:29:16,127 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:29:16,127 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-24 15:30:44,463 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:30:44,467 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:30:44,467 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:30:44,468 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-24 15:32:08,612 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:32:08,613 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=5, name=giri, department=null]
+ 2021-11-24 15:32:08,614 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=5, name=giri, department=null]
+ 2021-11-24 15:32:08,614 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-24 15:33:13,697 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with giri
+ 2021-11-24 15:33:13,697 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:33:13,697 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=0, name=giri, department=null]
+ 2021-11-24 15:33:13,698 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 
