@@ -9,12 +9,16 @@ import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 
 public class Employee {
+	@ApiModelProperty(notes = "Auto generated employee ID by DB")
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	int id;
+	@ApiModelProperty
 	String name;
 
 	@ManyToOne(fetch = FetchType.EAGER, optional = false)
@@ -55,7 +59,7 @@ public class Employee {
 
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	@Override

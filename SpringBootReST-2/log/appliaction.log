@@ -32,4 +32,17 @@
  2021-11-24 15:33:13,697 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=0, name=giri, department=null]
  2021-11-24 15:33:13,697 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=0, name=giri, department=null]
  2021-11-24 15:33:13,698 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-24 17:05:44,146 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:53 -deleting a employee with id 5
+ 2021-11-24 17:05:44,149 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:69 -Delete employee with ID :5
+ 2021-11-24 17:06:00,033 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:35 -finding all employees
+ 2021-11-24 17:14:52,237 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:35 -finding all employees
+ 2021-11-24 17:15:03,394 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.DepartmentController:42 -finding all departments
+ 2021-11-24 17:21:12,050 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.DepartmentController:60 -deleting a department with id 13
+ 2021-11-24 17:21:12,051 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.DepartmentService:60 -Delete Department with ID :13
+ 2021-11-24 17:22:35,283 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:41 -inserting a employee with Sizukha
+ 2021-11-24 17:22:35,283 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.service.EmployeeService:45 -Saving employee with ID :Employee [id=2, name=Sizukha, department=null]
+ 2021-11-24 17:22:35,284 {dd-MM-yyyy  HH:mm:ss } DEBUG com.cov.service.EmployeeService:46 -Employee not found with id :Employee [id=2, name=Sizukha, department=null]
+ 2021-11-24 17:22:35,284 {dd-MM-yyyy  HH:mm:ss } WARN  com.cov.service.EmployeeService:49 -com.cov.exception.InvalidEmployeeIdException
+ 2021-11-25 11:59:54,511 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.DepartmentController:60 -finding all departments
+ 2021-11-25 12:00:23,891 {dd-MM-yyyy  HH:mm:ss } INFO  com.cov.controller.EmployeeController:52 -finding all employees
  

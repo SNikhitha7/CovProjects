@@ -1,16 +1,8 @@
 package com.cov;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
-
-import com.cov.beans.Department;
-import com.cov.beans.Employee;
-import com.cov.service.DepartmentService;
-import com.cov.service.EmployeeService;
 
 @SpringBootApplication
 public class SpringBootReST2Application {
